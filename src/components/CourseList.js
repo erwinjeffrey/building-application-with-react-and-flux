@@ -1,11 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const courseList = props => {
+  const { deleteCourse, courses } = props;
   const renderRow = course => {
     return (
       <tr key={course.id}>
+        <td>
+          <button
+            className="btn btn-outline-danger"
+            onClick={() => onDeleteCourse(course.id)}
+          >
+            Delete
+          </button>
+        </td>
         <td>
           <Link to={'/course/' + course.slug}>{course.title}</Link>
         </td>
@@ -15,16 +25,21 @@ const courseList = props => {
     );
   };
 
+  const onDeleteCourse = courseId => {
+    deleteCourse(courseId);
+    toast.success('Course has been deleted');
+  };
   return (
     <table className="table">
       <thead>
         <tr>
+          <th>&nbsp;</th>
           <th>Title</th>
           <th>Author ID</th>
           <th>Category</th>
         </tr>
       </thead>
-      <tbody>{props.courses.map(renderRow)}</tbody>
+      <tbody>{courses.map(renderRow)}</tbody>
     </table>
   );
 };
@@ -34,6 +49,7 @@ const courseList = props => {
 };*/
 
 courseList.propTypes = {
+  deleteCourse: PropTypes.func.isRequired,
   courses: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,

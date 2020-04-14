@@ -9,7 +9,7 @@
     },
     {
       "id": 2,
-      "title": "React: The Big Picture",
+      "title": "React: The Big Picture1",
       "slug": "react-big-picture",
       "authorId": 1,
       "category": "JavaScript"
@@ -37,54 +37,11 @@
     },
     {
       "id": 6,
-      "title": "Building Applications in React and Flux",
-      "slug": "react-flux-building-applications",
-      "authorId": 1,
-      "category": "JavaScript"
-    },
-    {
-      "id": 7,
-      "title": "Clean Code: Writing Code for Humans2",
-      "slug": "writing-clean-code-humans",
-      "authorId": 1,
-      "category": "Software Practices"
-    },
-    {
-      "id": 8,
-      "title": "Architecting Applications for the Real World",
-      "slug": "architecting-applications-dotnet",
-      "authorId": 1,
-      "category": "Software Architecture"
-    },
-    {
-      "id": 9,
-      "title": "Becoming an Outlier: Reprogramming the Developer Mind",
-      "slug": "career-reboot-for-developer-mind",
-      "authorId": 1,
-      "category": "Career"
-    },
-    {
-      "id": 10,
-      "title": "Web Component Fundamentals",
-      "slug": "web-components-shadow-dom",
-      "authorId": 1,
-      "category": "HTML5"
-    },
-    {
-      "id": 11,
-      "slug": "react",
-      "title": "react",
+      "slug": "ecommerce-api",
+      "title": "Ecommerce API",
       "authorId": 2,
       "category": "web",
-      "createdAt": 1586811701443
-    },
-    {
-      "id": 12,
-      "slug": "dfgd",
-      "title": "dfgd",
-      "authorId": 2,
-      "category": "dfgd",
-      "createdAt": 1586812799308
+      "createdAt": 1586892068506
     }
   ],
   "authors": [
